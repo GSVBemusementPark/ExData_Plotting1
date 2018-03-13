@@ -38,10 +38,11 @@ legend("topright", legend = c("Sub_metering_1", "Sub_metering_2",
 
 title(ylab = "Energy sub metering")
 
-plot(dataset$Date, dataset$Voltage, type = "n", xlab = "Time")
+plot(dataset$Date, dataset$Voltage, type = "n", xlab = "datetime", ylab = "Voltage")
 lines(dataset$Date, dataset$Voltage, col = "black")
 
-plot(dataset$Date, dataset$Global_reactive_power, type = "n")
+plot(dataset$Date, dataset$Global_reactive_power, type = "n", xlab = "", ylab =)
 lines(dataset$Date, dataset$Global_reactive_power)
+title(xlab = "datetime", ylab = "Global_reactive_power")
 
 dev.off() # closes graphics device
